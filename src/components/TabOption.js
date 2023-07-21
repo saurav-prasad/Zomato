@@ -11,4 +11,4 @@ function TabOption({ activeTab, setactiveTab }) {
     )
 }
 
-export default TabOption
+export default TabOptio
