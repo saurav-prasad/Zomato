@@ -8,7 +8,7 @@ function Header() {
     return (
         <>
             {/* Container */}
-            <div className='headerContainer flexCenter'>
+            <div className='headerContainer maxWidth flexCenter'>
 
                 {/* logo */}
                 <img className='headerLogo' src='https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png' alt='' />
@@ -23,7 +23,7 @@ function Header() {
                         <div className="locationBox flexCenter">
                             <LocationOnIcon style={{ color: 'rgb(247 128 141)' }} />
                             <input type="text" className='searchInput locationInput' placeholder='Block A, Uttorayan Twnp,' />
-                            <ArrowDropDownIcon style={{ color: 'rgb(79 79 79)' }} className='arrowIcon' />
+                            <ArrowDropDownIcon style={{ color: 'rgb(79 79 79)' }} className='arrowIcon cursorPointer' />
                         </div>
 
                         {/* Searchbox */}
@@ -36,9 +36,9 @@ function Header() {
                     </div>
 
                     {/* login signup section*/}
-                    <div className='headerLogin flexCenter'>
-                        <div className='loginBox flexCenter'><p className='loginPara'>Log in</p></div>
-                        <div className='signupBox loginBox flexCenter'><p className='loginPara'>Sign up</p></div>
+                    <div className='userSelect headerLogin flexCenter'>
+                        <div className='loginBox flexCenter'><p className='loginPara cursorPointer'>Log in</p></div>
+                        <div className='signupBox loginBox flexCenter'><p className='loginPara cursorPointer'>Sign up</p></div>
                     </div>
                 </div>
             </div >

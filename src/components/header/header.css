@@ -1,9 +1,8 @@
 /* Container */
 .headerContainer {
     justify-content: space-between;
-    max-width: 1100px;
-    margin: 0 auto;
     height: 72px;
+    margin-bottom: 20px;
 }
 
 /* Logo */
@@ -39,14 +38,11 @@
     flex: 2.8;
 }
 
-.locationInput {
-    
-}
+.locationInput {}
 
 /* arrowIcon */
 .arrowIcon {
     margin-left: 3px;
-    cursor: pointer;
 }
 
 /* searchbox */
@@ -87,7 +83,6 @@
 }
 
 .loginPara {
-    cursor: pointer;
     padding: 5px 9px;
     font-size: 1.18rem;
     color: #838383;
