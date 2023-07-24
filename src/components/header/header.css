@@ -24,7 +24,7 @@
     justify-content: space-between;
     height: 3.4rem;
     background: rgb(255, 255, 255);
-    border-radius: 0.8rem;
+    border-radius: 10px;
     box-shadow: rgba(28, 28, 28, 0.08) 0px 2px 8px;
     border: 1px solid rgb(232, 232, 232);
     margin-left: 1.35em;
@@ -57,8 +57,8 @@
 /* Inputbox */
 .inputBox {
     flex: 5;
-    height: 100%;
     height: 95%;
+    /* height: 3em; */
 }
 
 .searchInput {
@@ -71,6 +71,7 @@
     height: 100%;
     font-weight: 500;
     color: #464646;
+    text-overflow: ellipsis;
 }
 
 /* login signup section */

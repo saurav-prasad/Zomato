@@ -19,12 +19,11 @@ function ProductCard({ productData }) {
   const proOff = offers.length > 1 ? offers[1] : offers.length === 1 ? offers[0] : null
 
 
-
   return (
     <div className='cursorPointer cardContainer'>
 
       {/* card image */}
-      <Zoom fraction={1} duration={200} triggerOnce={true}>
+      <Zoom cascade duration={200} triggerOnce={true}>
         <div className='cardImageBox'>
           <img className='cardImage' src={image} alt="" />
           <div className='cardImageOffers'>{proOff?.text}</div>

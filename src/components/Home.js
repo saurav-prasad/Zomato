@@ -6,32 +6,37 @@ import DiningOut from './tabs/diningOut/DiningOut'
 import Footer from './footer/Footer'
 import NightLife from './tabs/nightLife/NightLife'
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
+import Accordion from './accordion/Accordion'
+import { useLocation } from 'react-router-dom'
 
 function Home() {
-    const [activeTab, setactiveTab] = useState('Delivery')
-    return (
+    const url = useLocation()
+    const [activeTab, setactiveTab] = useState(url.pathname)
+    console.log(url.pathname)
+    return (<>
         <div style={{ position: 'relative' }}>
-            <div id='header' ><Header/></div>
+            <div id='header' ><Header /></div>
             <TabOption activeTab={activeTab} setactiveTab={setactiveTab} />
-            {getCorrectScreen(activeTab)}
-            <Footer />
+            {getCorrectScreen(url.pathname)}
             <div className='upArrowBox flexCenter cursorPointer'>
                 <a href="#header" className='upArrow flexCenter'>
-                    <KeyboardArrowUpIcon fontSize='large'/>
+                    <KeyboardArrowUpIcon fontSize='large' />
                 </a>
             </div>
-
+            <Accordion />
+            <Footer />
         </div>
+    </>
     )
 }
 
 const getCorrectScreen = (tab) => {
     switch (tab) {
-        case "Delivery":
+        case "/collections/delivery":
             return <Delivery />
-        case "Dining Out":
+        case "/collections/diningout":
             return <DiningOut />
-        case "Night Life":
+        case "/collections/nightlife":
             return <NightLife />
         default:
             return <Delivery />

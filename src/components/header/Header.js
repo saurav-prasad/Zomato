@@ -3,6 +3,7 @@ import './header.css'
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import SearchIcon from '@mui/icons-material/Search';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import { Link } from 'react-router-dom';
 
 function Header() {
     return (
@@ -11,7 +12,7 @@ function Header() {
             <div className='headerContainer maxWidth flexCenter'>
 
                 {/* logo */}
-                <img className='headerLogo' src='https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png' alt='' />
+                <Link className='.Link' to='/'><img className='headerLogo' src='https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png' alt='' /></Link>
 
                 {/* header section */}
                 <div className='headerSection flexCenter'>
@@ -22,7 +23,7 @@ function Header() {
                         {/* Location */}
                         <div className="locationBox flexCenter">
                             <LocationOnIcon style={{ color: 'rgb(247 128 141)' }} />
-                            <input type="text" className='searchInput locationInput' placeholder='Block A, Uttorayan Twnp,' />
+                            <input type="text" className='searchInput locationInput' placeholder='Block A, Uttorayan Twnp-ship, Ashrampara, Haidar Para, Siliguri' />
                             <ArrowDropDownIcon style={{ color: 'rgb(79 79 79)' }} className='arrowIcon cursorPointer' />
                         </div>
 

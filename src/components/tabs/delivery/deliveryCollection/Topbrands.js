@@ -65,7 +65,7 @@ const topbrands = [
 ]
 function Topbrands() {
     return (
-        <div style={{marginBottom:'30px'}}>
+        <div style={{marginBottom:'50px'}}>
             <SliderCarsoule collectionData={topbrands} collectionName='Top brands for you' />
         </div>
     )

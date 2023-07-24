@@ -29,12 +29,14 @@
 .slick-prev.slick-disabled:before {
   opacity: 0;
 }
-.upArrow{
+
+.upArrow {
   color: white;
   padding: 10px;
   border-radius: 100%;
 }
-.upArrowBox{
+
+.upArrowBox {
   color: white;
   position: sticky;
   bottom: 27px;
@@ -42,9 +44,15 @@
   padding: 10px;
   background-color: #ef4f5f;
   border-radius: 50%;
-  width: 3em;
-  height: 3em;
+  width: 4em;
+  height: 4em;
 }
-.upArrowBox:hover{
+
+.upArrowBox:hover {
   background-color: #da3e4e;
+}
+.Link{
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
