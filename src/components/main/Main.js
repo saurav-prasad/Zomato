@@ -5,6 +5,7 @@ import Accordion from '../accordion/Accordion'
 import Footer from '../footer/Footer'
 import Category from '../category/Category'
 import MainHeader from '../mainHeader/MainHeader'
+import Cities from '../cities/Cities'
 
 function Main() {
   return (
@@ -12,6 +13,7 @@ function Main() {
         <MainHeader/>
         <Category/>
         <Collection/>
+        <Cities/>
         <Sponsor/>
         <Accordion/>
         <Footer/>

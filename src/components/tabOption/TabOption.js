@@ -1,6 +1,6 @@
 import React from 'react'
 import './tabOption.css'
-import { Link, useLocation } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 const tabs = [
     {
         id: 1,
@@ -29,7 +29,7 @@ const tabs = [
 ]
 
 function TabOption({ activeTab, setactiveTab }) {
-    const url = useLocation()
+    
     return (
         <>
             <div className='tabContainer'>

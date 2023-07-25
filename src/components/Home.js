@@ -11,8 +11,7 @@ import { useLocation } from 'react-router-dom'
 
 function Home() {
     const url = useLocation()
-    const [activeTab, setactiveTab] = useState(url.pathname)
-    console.log(url.pathname)
+    const [activeTab, setactiveTab] = useState(url.pathname) 
     return (<>
         <div style={{ position: 'relative' }}>
             <div id='header' ><Header /></div>

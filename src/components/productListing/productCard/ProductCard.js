@@ -8,6 +8,7 @@ function ProductCard({ productData }) {
   const name = productData?.info?.name ?? ""
   const image = productData?.info?.image?.url ?? ""
   const rating = productData?.info?.rating?.rating_text ?? ""
+  Number(rating)
   const ratingColor = productData?.info?.rating?.rating_color ?? ""
   const cfo = productData?.info?.cfo?.text ?? ""
   const cuisine = productData?.info?.cuisine?.map((item) => item.name).slice(0, 2) ?? []
@@ -17,7 +18,7 @@ function ProductCard({ productData }) {
   const goldText = productData?.gold?.text
   const goldValue = productData?.gold?.offerValue
   const proOff = offers.length > 1 ? offers[1] : offers.length === 1 ? offers[0] : null
-
+  // console.log(typeof Number(rating));
 
   return (
     <div className='cursorPointer cardContainer'>
